@@ -2,9 +2,9 @@
 
 document.getElementById('userForm').addEventListener('submit', function(event) {
     event.preventDefault();
-    const username = document.getElementById('username').value;
+    const user = document.getElementById('user').value;
     const greetingDiv = document.getElementById('greeting');
     
     // Vulnerable to XSS
-    greetingDiv.innerHTML = `Hello, ${username}!`;
+    greetingDiv.innerHTML = `Hello, ${user}!`;
 });
