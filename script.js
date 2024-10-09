@@ -1,4 +1,4 @@
-/* Example for testing */
+/* Example for testing 2 */
 
 document.getElementById('userForm').addEventListener('submit', function(event) {
     event.preventDefault();
