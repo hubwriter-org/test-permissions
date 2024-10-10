@@ -1,3 +1,5 @@
+/* Test Copilot Autofix */
+
 document.getElementById('userForm').addEventListener('submit', function(event) {
     event.preventDefault();
     const user = document.getElementById('user').value;
