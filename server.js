@@ -12,7 +12,7 @@ const server = http.createServer((req, res) => {
     }
 
     const extname = String(path.extname(filePath)).toLowerCase();
-    const mimeTypes = {
+    const types = {
         '.html': 'text/html',
         '.js': 'text/javascript',
         '.css': 'text/css',
@@ -29,7 +29,7 @@ const server = http.createServer((req, res) => {
         '.svg': 'application/image/svg+xml'
     };
 
-    const contentType = mimeTypes[extname] || 'application/octet-stream';
+    const contentType = types[extname] || 'application/octet-stream';
 
     fs.readFile(filePath, (error, content) => {
         if (error) {
