@@ -1,18 +1,19 @@
+// index.html
+/* Save this as index.html in the same directory as server.js */
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XSS Vulnerability Example</title>
+    <title>Display the word the user entered</title>
 </head>
 <body>
-    <h1>Welcome to the XSS Vulnerability Example</h1>
-    <form id="userForm">
-        <label for="username">Enter your name:</label>
-        <input type="text" id="username" name="username">
+    <h1>Enter any word, then click Submit</h1>
+    <form id="wordForm">
+        <label for="wordInput">Enter a single word:</label>
+        <input type="text" id="wordInput" name="wordInput" required>
         <button type="submit">Submit</button>
     </form>
-    <div id="greeting"></div>
+    <h3 id="result"></h3>
 
     <script src="script.js"></script>
 </body>
