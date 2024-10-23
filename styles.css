@@ -1,0 +1,44 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3cece;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto 20px auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+h3#result {
+  text-align: center;
+  color: #007BFF;
+  font-weight: normal;
+}
